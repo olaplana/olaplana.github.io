@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <!-- Els símbols que hi ha davant signifiquen comentari de html són destinats a humans.-->
 <!-- html significa HyperText Markup Language, llenguatge de marques de hipertext. L'hipertext va més enllà del text, els enllaços, les imatges, els micròfons, la càmera, els videos-->
-<html lang="ca">
+
+  <html lang="ca">
   <!-- Aquí posem la llengua que utilitzarem dintre del text, "ca" vol dir català, "en" vol dir anglès, i "es" vol dir Español, "fr" és francès i "de" és alemany.-->
-<head>
-   <!-- Tots els codis html tenen dues parts, el head i el body. El head conté informació per l'ordinador i el body informació per la persona que està llegint.-->
+
+  <head>
+  <!-- Tots els codis html tenen dues parts, el head i el body. El head conté informació per l'ordinador i el body informació per la persona que està llegint.-->
+ 
   <meta charset="UTF-8">
   <!-- Meta vol dir metainformació que vol dir informació sobre la informació. Charset significa character set o conjunt de caràcters, UTF-8 és un conjunt de caràcters que es diu Unicode i inclou més d'un milió de caràcters, com la "ç", la "ñ", els accents, la dièresi, els caràcters xinesos o àrabs.-->
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- La metainformació  anterior indica que el viewport o zona visible a la pantalla es veu els seu contingut o content ="width=device-width la amplada que veiem és igual a la amplada del dispositiu, s'adapta a qualsevol pantalla com la del mobil, la del cinema, una tableta, un portàtil, una televisió...-->
+  
   <title>Web d'Olivia</title>
   <!-- Aquest title és el títol de la pestanya de la pàgina web.-->
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
   <!-- Les dues línies que comencen amb "link" són molt importants perqué linkan o uneixen la biblioteca bootstrap i la biblioteca font-awesome. Aquestes biblioteques són "css" que significa cascade style sheets o fulls d'estil en cascada. La biblioteca bootstrap permet els menus desplegables i els logos i la biblioteca font-awesome permet els icones davant dels menus.-->
+  <!-- Les biblioteques comencen amb "cdn" perqué significa content delivery network o xerxa per guardar contingut i donar-lo. Vol dir que si jo vaig a l'adreça "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css". Aquesta biblioteca està minificada, sense espais en blanc ni canvis de línea, perque ocupi menys espai de memòria i l'ordinador va més ràpid, però si jo vull veure com és de forma ordenada, amb espais i canvis de línea li he de treure la paraula "min".-->
+    
+    <!-- A partir de la línea de sota ja no hi ha llenguatge html, sinó el llenguatge css, d'estils, la etiqueta style avisa que tot el que hi ha a continuació és css. El llenguatge css no té els símbols "menor que" i "major que". Si el html és l'esquelet l'estil sería com la roba o els complements. Totes les pàgines web han de tenir separada la seva estructura html de l'estil css. A més, poden utilitzar Javascript, que serveix per fer qualsevol cosa interactiva o moviments, o canvis. Si fos una persona li permetria el moviment, o el comportament.
+    Olivia, el html son les bases, el cos nu; el css es quin estil té aquest cos, quina roba porta; i el Javascript és el moviment i com actua. -->
   <style>
+    
     /* 1. Submenús en mode fosc */
     body[data-bs-theme="dark"] .dropdown-menu {
       background-color: #2c2c2c !important;
