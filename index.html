@@ -30,6 +30,22 @@
     }
     El selector és una etiqueta html o un identificador o una classe creada per nosaltres. Les propietats poden ser per exemple el tamany de la lletra: font-size o la família de la lletre font-family. Els valors depenen de les propietats, si és font-size serà el tamany de la lletra i si s'expresa en pixels, per exemple, 24px (24 pixels) i font-family només pot ser 3 tipus: Serif, Sans-Serif, Monospace. El Serif significa que son lletres amb gràcies o serífas en castellà (adornaments o cosas que les fan veure elegants). Sans-Serif és a pal sec i sense serifes. I el Monospace o monoespaciada és una lletra que té el mateix tamany d'amplada per cada lletra, s'utilitza per escriure codi.-->
   <style>
+    /* Els comentaris aquí són diferents perque no  és html, és css i no puc posar <!-- -->, he de posar /* i *\
+    
+    /* La doble barra (//) ens permet fer comentaris de una línea de longitud dins de Javascript però això no és Javascript*\
+    
+    /* El body és el cos del codi, la part més important que veu l'usuari i a continuació li diem que fasi el theme o plantilla de color dark o fosc i que el menu desplegable o dropdown-menu tingui un color de fons (backround-color) color 2c2c2c, si li poso "!important" pasarà per sobre de tots els altres colors.
+    Perque el color és 2c2c2c?
+    2c és un número hexadecimal que vol dir en base 16: la base 16 inclou els números del 0 al 9 i després al número A que és el número 10, al número B que és 11, al número C que és 12, al número D que és 13, al número E que és 14 i el número F que és 15, es a dir tenim 16 números. Tenim 16 números en el món dels ordinadors a vegades tenim 32 bits, o 64 bits, i tots aquests números són múltiples de 2 perque els milions de transistors que formen els ordinadors poden estar en dos estats ences o apagat. Ara aprendrem que significa 2c en decimal i en binari.
+    Qué és la base decimal?
+    És com pensem els humans en base 10, els ordinadors no pensen igual, pernsen en binari, 0 i 1, i poden pensar en hexadecimal que va del 0 al 9 i de la A a la F.
+    2026 = 2·10^3 + 0^2 + 2·10^1 + 6·10^0 = 2000 + 0 + 20 + 6
+    I ara com pensa un ordinador?
+    2c és = 2·16^1 + c·16^0 = 2·16^1 + 11·16^0 = 2·16^1 + 11 = 32 + 11 = 43
+    I el número 43 com es posa en binari (amb 0 i 1)?
+    Es divideix entre 2 fins arribar a l'1, i tots els residus donen o 0 o 1 i així el transformo i dona 101011.
+    Ho comprovem amb: 101011 = 1·2^5 + 0·2^4 + 1·2^3 + 0·2^2 + 1·2^1 + 1·2^0 = 32 + 0 + 8 + 0 + 2 + 1 = 43.
+
     
     /* 1. Submenús en mode fosc */
     body[data-bs-theme="dark"] .dropdown-menu {
