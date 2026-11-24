@@ -25,15 +25,19 @@ function draw() {
   noFill (); // Treure Color Cella Dreta.
   arc (340,240,50,10,PI,0); // Cella Dreta.
   
-  fill(252, 124,106); // Color Boca.
-  arc (300,360,100,40,0,PI); line(250,360,350,360)// Boca. Funciona com el el·lipse els primers quatre números i els dos últims són 0 PI o PI,0.
-  fill (207, 88, 70); // Color Llengua.
+  fill(252,124,106); // Color Boca.
+  arc (300,360,100,40,0,PI);// Boca. Funciona com el el·lipse els primers quatre números i els dos últims són 0 PI o PI,0.
+  push();
+  noFill();
+  arc(300,360,99, 1 , 0, PI);
+  pop();
+  fill (207,88,70); // Color Llengua.
   arc (300,378,50,10,PI,0); // Llengua.
   
-   fill (230, 173, 125); // Color Nas Ombra.
-  triangle (320,340,300,300,280,340); // Nas Ombra.
-   fill (242, 204, 174); // Color Nas Llum.
+  fill (191, 144, 105); // Color Nas Ombra +.
+  triangle (320,340,300,350,280,340); // Nas Ombra +.
+  fill (230,173,125); // Color Nas Ombra -.
+  triangle (320,340,300,300,280,340); // Nas Ombra -.
+  fill (242, 204,174); // Color Nas Llum.
   triangle (300,340,300,300,280,340); // Nas Llum.
-
-
 }
